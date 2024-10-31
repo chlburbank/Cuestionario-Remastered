@@ -13,18 +13,35 @@
         android:theme="@style/Theme.Cuestionario_Remastered"
         tools:targetApi="31">
         <activity
-            android:name=".LoginActivity"
+            android:name=".ResultadosActivity"
             android:exported="false" />
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+        <activity
+            android:name=".Pregunta5"
+            android:exported="false" />
+        <activity
+            android:name=".Pregunta4"
+            android:exported="false" />
+        <activity
+            android:name=".Pregunta3"
+            android:exported="false" />
+        <activity
+            android:name=".Pregunta2"
+            android:exported="false" />
+        <activity
+            android:name=".Pregunta1"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true" />
     </application>
 
 </manifest>

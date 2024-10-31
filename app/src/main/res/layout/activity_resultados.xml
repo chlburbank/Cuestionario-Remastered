@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_bg_view"
+    tools:context=".ResultadosActivity">
+
+    <View
+        android:id="@+id/view8"
+        android:layout_width="309dp"
+        android:layout_height="640dp"
+        android:background="@drawable/rounded_corners"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnVolver"
+        android:layout_width="211dp"
+        android:layout_height="102dp"
+        android:layout_marginTop="225dp"
+        android:backgroundTint="#1f1f1f"
+        android:text="Volver"
+        android:textColor="#d9d9d9"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="@+id/view8"
+        app:layout_constraintStart_toStartOf="@+id/view8"
+        app:layout_constraintTop_toBottomOf="@+id/labelPuntuacion" />
+
+    <TextView
+        android:id="@+id/labelPuntuacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Puntuacion: "
+        android:textColor="#D9D9D9"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/view8"
+        app:layout_constraintHorizontal_bias="0.136"
+        app:layout_constraintStart_toStartOf="@+id/view8"
+        app:layout_constraintTop_toBottomOf="@+id/labelUser" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="263dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="32dp"
+        android:gravity="start"
+        android:text="RESULTADOS:"
+        android:textColor="#d9d9d9"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/view8"
+        app:layout_constraintStart_toStartOf="@+id/view8"
+        app:layout_constraintTop_toTopOf="@+id/view8" />
+
+    <TextView
+        android:id="@+id/labelUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Usuario: "
+        android:textColor="#D9D9D9"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/view8"
+        app:layout_constraintHorizontal_bias="0.111"
+        app:layout_constraintStart_toStartOf="@+id/view8"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+</androidx.constraintlayout.widget.ConstraintLayout>

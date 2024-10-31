@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_bg_view"
+    tools:context=".Pregunta5">
+
+    <View
+        android:id="@+id/view7"
+        android:layout_width="309dp"
+        android:layout_height="640dp"
+        android:background="@drawable/rounded_corners"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnFinalizar"
+        android:layout_width="211dp"
+        android:layout_height="102dp"
+        android:layout_marginTop="76dp"
+        android:backgroundTint="#1f1f1f"
+        android:text="Finalizar"
+        android:textColor="#d9d9d9"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="@+id/view7"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/view7"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="271dp"
+        android:layout_height="169dp"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:text="FINALIZAR CUESTIONARIO?"
+        android:textColor="#d9d9d9"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="@+id/view7"
+        app:layout_constraintStart_toStartOf="@+id/view7"
+        app:layout_constraintTop_toTopOf="@+id/view7" />
+</androidx.constraintlayout.widget.ConstraintLayout>
